@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/itemTimeM"
+        android:orderInCategory="100"
+        android:alphabeticShortcut="M"
+        android:showAsAction="always"
+        android:title="@string/item_time_mor"/>
+    <item android:id="@+id/itemTimeAft" 
+        android:orderInCategory="100"
+        android:alphabeticShortcut="A"
+        android:showAsAction="always"
+        android:title="@string/item_time_aft"></item>
+    
+<item android:id="@+id/itemTimeE" 
+        android:orderInCategory="100"
+        android:alphabeticShortcut="E"
+        android:showAsAction="always"
+        android:title="@string/item_time_eve"></item>
+
+<item android:id="@+id/itemTimeNig" 
+        android:orderInCategory="100"
+        android:alphabeticShortcut="N"
+        android:showAsAction="always"
+        android:title="@string/item_time_nig"></item>
+<item android:id="@+id/itemTimeSel" 
+        android:orderInCategory="100"
+        android:alphabeticShortcut="S"
+        android:showAsAction="always"
+        android:title="@string/item_time_select"></item>
+</menu>

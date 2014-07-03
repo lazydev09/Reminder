@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:gravity="top|center"
+    android:padding="3dp"
+    android:layout_height="fill_parent">
+    
+    
+		    
+		     <TextView
+		           android:id="@+id/tvFooterMsg"
+		           android:layout_width="wrap_content"
+		           android:layout_height="fill_parent"
+		           android:gravity="top"
+		           android:padding="5dp"
+		           android:visibility="gone"
+		           android:text="Cannot Get Data, Please try again later"/>
+		    
+		 <ProgressBar
+		     android:id="@+id/pgFooter"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         style="@android:style/Widget.ProgressBar.Small"
+         android:layout_marginRight="5dp" />
+</LinearLayout>

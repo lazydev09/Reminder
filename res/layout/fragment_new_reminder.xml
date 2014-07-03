@@ -1,0 +1,204 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".NewReminderActivity" >
+
+        <!-- audio controls -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imgText"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/imgText"
+                android:src="@drawable/picf" />
+
+            <ImageButton
+                android:id="@+id/imgAud"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/imgAud"
+                android:maxWidth="10dp"
+                android:src="@drawable/audio" />
+
+         
+        </LinearLayout>
+
+        <!-- message layoyt -->
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout1"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layoutAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <ImageButton
+                    android:id="@+id/imgAudioRec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/podcastslibrary" />
+
+                <ProgressBar
+                    android:id="@+id/pbAud"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/voicerec_progressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <ImageButton
+                    android:id="@+id/imgAudioPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/playvideo"
+                    android:paddingRight="10dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/lbl_new_reminder" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- dynamic view hidden -->
+
+        <LinearLayout
+            android:id="@+id/layDyn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:orientation="vertical" >
+
+            <VideoView
+                android:id="@+id/videoView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.51"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- date and time -->
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutMsg"
+            android:layout_marginTop="30dp" >
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="@string/lblDate" />
+
+            <TextView
+                android:id="@+id/tvAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/lblAt" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="time" />
+        </LinearLayout>
+
+        <!-- priority and button -->
+
+        <LinearLayout
+            android:id="@+id/layBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutTime"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="@string/lblPriority" />
+
+            <Button
+                android:id="@+id/btnSendRem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/btnReminder"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <!-- photos -->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPhotos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:padding="3dip"
+                    android:src="@drawable/common_signin_btn_icon_dark"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:id="@+id/frd_details_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layBtn"
+            android:layout_marginTop="30dp" />
+    </RelativeLayout>
+
+</ScrollView>

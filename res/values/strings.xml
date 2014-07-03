@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Reminder</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- registration activity -->
+    <string name="title_activity_reg">Registration</string>
+    <string name="reg_lblMobile">Mobile</string>
+    <string name="reg_lblEmail">Email</string>
+    <string name="reg_btnReg">Register</string>
+    <string name="reg_res_txtVerify">Enter Verification Pin</string>
+    <string name="reg_res_btnVerify">Verify</string>
+
+    <!-- friends -->
+    <string name="action_friends">Friends</string>
+    <string name="title_activity_friend_details">Friend Details</string>
+    <string name="action_refresh_friends">Refresh</string>
+    <string name="title_activity_sliding_menu">Set Friends Reminder</string>
+    <string name="title_activity_new_local_reminder">Set Reminder</string>
+    
+    
+      <!-- menu -->
+    <string name="item_date_today">Today</string>
+    <string name="item_date_tmr">Tommorrow</string>
+    <string name="item_date_select">Choose a Date</string>
+    <string name="item_time_mor">Morning (9AM)</string>
+    <string name="item_time_aft">AfterNoon (12AM)</string>
+    <string name="item_time_eve">Evening (6PM)</string>
+    <string name="item_time_nig">Night (9PM)</string>
+    <string name="item_time_select">Choose a Time</string>
+    <string name="item_pri_normal">Normal</string>
+    <string name="item_pri_Imp">Important</string>
+    
+    
+    <!-- slidingmenuactivity -->
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    
+    <!-- New reminder -->
+    <string name="lbl_new_reminder">Enter New Reminder</string>
+    <string name="imgText">Text</string>
+    <string name="imgAud">Audio</string>
+    <string name="lblDate">Set Date</string>
+    <string name="lblTime">Set Time</string>
+    <string name="lblAt">At</string>
+    <string name="lblPriority">Priority</string>
+    <string name="btnReminder">Send Reminder</string>
+    
+    <!-- Reminder list page -->
+    <string name="btnMyRem">MySelf</string>
+    <string name="btnFriendsRem">Friends</string>
+    <string name="lblMyRem">My Reminders</string>
+    <string name="lblNoPenRem">No Pending Reminders</string>
+    <string name="lblFriends">Friends</string>
+
+</resources>

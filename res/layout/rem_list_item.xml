@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.vf"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <ImageView
+        android:id="@+id/ivRemPhoto"
+        android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+           
+        android:src="@drawable/ic_launcher" />
+
+         
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_below="@id/tvDate"
+        android:maxLines="1"
+        android:minLines="1"
+        android:text="Time" />
+    
+    
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivRemPhoto"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tvDate"
+        android:layout_toRightOf="@+id/ivRemPhoto"
+        android:text=""
+        android:singleLine="false"
+         android:maxLines="2"
+         android:ellipsize="end"
+        android:textSize="12sp" />
+
+  
+
+    <ProgressBar
+        android:id="@+id/pbHeaderProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutExpand"
+        android:layout_alignLeft="@+id/tvMsg"
+        android:layout_marginLeft="56dp"
+        android:visibility="gone"
+         />
+
+    <LinearLayout
+        android:id="@+id/layoutExpand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvMsg"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="127dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+   
+    
+
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvMsg"
+        android:layout_alignRight="@+id/tvTime"
+        android:layout_marginBottom="16dp"
+        android:maxLines="1"
+        android:minLines="1"
+        android:text="Date" />
+    
+    
+    
+    <!--buttons  and full text meesage -->
+
+  <LinearLayout
+      android:id="@+id/layoutFull"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_toRightOf="@+id/ivRemPhoto"
+      android:layout_toLeftOf="@+id/tvDate"
+      android:visibility="gone"
+      
+      android:orientation="vertical" >
+
+      <TextView
+          android:id="@+id/tvFull"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toLeftOf="@+id/tvDate"
+          android:layout_toRightOf="@+id/ivRemPhoto"
+          android:text="TextView"
+          android:textSize="12sp" />
+      
+       <LinearLayout
+      android:id="@+id/layoutBtns"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/ivRemPhoto"
+      android:layout_toRightOf="@+id/ivRemPhoto"
+      android:paddingTop="15dp"
+      android:orientation="horizontal" >
+
+      <ImageView
+          android:id="@+id/imgDel"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="20dp"
+          android:focusable="false"
+          android:focusableInTouchMode="false"
+          android:src="@drawable/diskcleanup" />
+      
+      <ImageView
+          android:id="@+id/imgFor"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="20dp"
+          android:focusable="false"
+          android:focusableInTouchMode="false"
+          android:src="@drawable/forward" />
+      
+      
+      <ImageView
+          android:id="@+id/imgAud"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="20dp"
+          android:focusable="false"
+          android:focusableInTouchMode="false"
+          android:visibility="gone"
+          android:src="@drawable/audio" />
+
+  </LinearLayout>
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/imgPlayVideo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/tvDate"
+      android:layout_marginRight="38dp"
+      android:layout_toLeftOf="@+id/tvTime"
+      android:visibility="gone"
+      android:src="@drawable/playvideo" />
+
+</RelativeLayout> 
